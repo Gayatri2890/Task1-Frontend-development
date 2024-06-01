@@ -1,30 +1,23 @@
-import React, { useState } from 'eact';
+import React from 'react';
 
-const Step3 = () => {
-  const [projectType, setProjectType] = useState('');
-
-  const handleInputChange = (e) => {
-    setProjectType(e.target.value);
-  };
-
+function Step3({ nextStep, prevStep, handleChange, formData }) {
   const handleSubmit = (e) => {
     e.preventDefault();
-    localStorage.setItem('projectType', projectType);
-    // Navigate to next step
+    // Add form validation logic here if needed
+    nextStep();
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>Project Type:</label>
-      <select value={projectType} onChange={handleInputChange}>
-        <option value="">Select a project type</option>
-        <option value="Time & Materials">Time & Materials</option>
-        <option value="Fixed Fee">Fixed Fee</option>
-        {/* Add more options as needed */}
-      </select>
-      <button type="submit">Next</button>
-    </form>
+    <div>
+      <h2>Step 3</h2>
+      <form onSubmit={handleSubmit}>
+        {/* Form fields for Step 3 */}
+        {/* Navigation buttons */}
+        <button type="button" onClick={prevStep}>Back</button>
+        <button type="submit">Next</button>
+      </form>
+    </div>
   );
-};
+}
 
 export default Step3;
