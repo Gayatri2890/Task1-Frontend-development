@@ -8,14 +8,8 @@ To install and run the project locally, follow these steps:
 2. Navigate to the project directory:cd Task1-Frontend-development
 3. Install dependencies:npm install
 4. Start the development server:npm start
-5.Features
-Multi-step form
-Form validation
-Responsive design
-Local storage for form data
-6.Technologies Used
-React
-CSS
+Features:Multi-step form,Form validation,Responsive design,Local storage for form data
+6.Technologies Used:React and CSS
 Local Storage
 ## Usage
 Once the development server is running, you can access the project in your web browser. Open your preferred web browser and navigate to the following address: http://localhost:3000
