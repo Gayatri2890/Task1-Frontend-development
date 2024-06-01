@@ -6,16 +6,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
-    // Additional dependencies
-    "react-router-dom": "^6.0.2", // For routing
-    "redux": "^4.1.1", // For state management
-    "formik": "^3.3.0", // For form handling
-    "styled-components": "^5.3.3", // For styling
-    "axios": "^0.24.0", // For HTTP requests
-    "material-ui": "^5.2.3", // For UI components
-    "react-bootstrap": "^2.0.0-beta.4", // For UI components
-    "jest": "^27.4.3" // For testing
-  },
+    
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
