@@ -1,29 +1,23 @@
-import React, { useState } from 'eact';
+import React from 'react';
 
-const Step2 = () => {
-  const [client, setClient] = useState('');
-
-  const handleInputChange = (e) => {
-    setClient(e.target.value);
-  };
-
+function Step2({ nextStep, prevStep, handleChange, formData }) {
   const handleSubmit = (e) => {
     e.preventDefault();
-    localStorage.setItem('client', client);
-    // Navigate to next step
+    // Add form validation logic here if needed
+    nextStep();
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>Client:</label>
-      <select value={client} onChange={handleInputChange}>
-        <option value="">Select a client</option>
-        <option value="New Client">New Client</option>
-        {/* Add more options as needed */}
-      </select>
-      <button type="submit">Next</button>
-    </form>
+    <div>
+      <h2>Step 2</h2>
+      <form onSubmit={handleSubmit}>
+        {/* Form fields for Step 2 */}
+        {/* Navigation buttons */}
+        <button type="button" onClick={prevStep}>Back</button>
+        <button type="submit">Next</button>
+      </form>
+    </div>
   );
-};
+}
 
 export default Step2;
