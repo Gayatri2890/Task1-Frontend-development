@@ -1,0 +1,61 @@
+/* Form container */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form steps */
+.step {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+/* Form fields */
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Navigation buttons */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+/* Button colors */
+.back-button {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.next-button,
+.submit-button {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.next-button:hover,
+.submit-button:hover {
+  background-color: #45a049; /* Darker green */
+}
