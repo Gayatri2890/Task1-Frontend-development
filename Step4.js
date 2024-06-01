@@ -1,24 +1,26 @@
-import React, { useState } from 'eact';
+import React from 'react';
 
-const Step4 = () => {
-  const [startDate, setStartDate] = useState('');
-  const [endDate, setEndDate] = useState('');
-
-  const handleStartDateChange = (e) => {
-    setStartDate(e.target.value);
-  };
-
-  const handleEndDateChange = (e) => {
-    setEndDate(e.target.value);
-  };
-
+function Step4({ prevStep, formData }) {
   const handleSubmit = (e) => {
     e.preventDefault();
-    localStorage.setItem('startDate', startDate);
-    localStorage.setItem('endDate', endDate);
-    // Navigate to next step
+    // Handle form submission or any final actions here
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>Start Date:</
+    <div>
+      <h2>Step 4</h2>
+      <form onSubmit={handleSubmit}>
+        {/* Form fields for Step 4 */}
+        {/* Display form data for review */}
+        <p>Name: {formData.name}</p>
+        <p>Email: {formData.email}</p>
+        {/* Add more form fields and review data as needed */}
+        {/* Navigation buttons */}
+        <button type="button" onClick={prevStep}>Back</button>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  );
+}
+
+export default Step4;
