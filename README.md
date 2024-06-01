@@ -13,9 +13,9 @@ Once the development server is running, you can access the project in your web b
 ## Reference Images
 Here are the reference images for Task 1:
 
-![Task 1 - Step 1](https://drive.google.com/file/d/1E5apuF-iOJWOWYsMskps1B0uNhSJnyxu/view?usp=drivesdk)
-![Task 1 - Step 2](https://drive.google.com/file/d/1DkMwvBm5wGfXMnEdzIoza9ND_HOdXe2o/view?usp=drivesdk)
-![Task 1 - Step 3](https://drive.google.com/file/d/1DlIn7DUIugE_C5uQvb2JBZKipfidFrGm/view?usp=drivesdk)
+![Task 1 - Step 1](https://drive.google.com/uc?export=download&id=1E5apuF-iOJWOWYsMskps1B0uNhSJnyxu)
+![Task 1 - Step 2](https://drive.google.com/uc?export=download&id=1DkMwvBm5wGfXMnEdzIoza9ND_HOdXe2o)
+![Task 1 - Step 3](https://drive.google.com/uc?export=download&id=1DlIn7DUIugE_C5uQvb2JBZKipfidFrGm)
 
 ## Contributing
 Contributions are not accepted for this project as it is part of a front-end development internship task.
