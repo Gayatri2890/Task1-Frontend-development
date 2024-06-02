@@ -32,6 +32,25 @@
       "not dead",
       "not op_mini all"
     ],
+    {
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
+
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
